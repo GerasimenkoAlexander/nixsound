@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('track-list', {path:'track-list'}, function(){
+  this.resource('track-list', {path:'track-list/'}, function(){
     this.resource('track');
   });
 });

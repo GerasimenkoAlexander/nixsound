@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('track-list');
+  this.resource('track-list', {path:'track-list'}, function(){
+    this.resource('track');
+  });
 });
 
 export default Router;
